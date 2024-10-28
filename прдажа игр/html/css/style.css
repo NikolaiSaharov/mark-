@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Общие стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #34495e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Стили для каталога игр */
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #2c3e50;
+    border: 1px solid #34495e;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.game-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #ecf0f1;
+}
+
+.game-card p {
+    color: #bdc3c7;
+    font-size: 1.2rem;
+}
+
+.game-card button {
+    background-color: #3498db;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+}
+
+.game-card button:hover {
+    background-color: #2980b9;
+}
+
+/* Стили для продавцов */
+.sellers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.seller-card {
+    background-color: #2c3e50;
+    border: 1px solid #34495e;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.seller-card:hover {
+    transform: scale(1.05);
+}
+
+.seller-card img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.seller-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #ecf0f1;
+}
+
+.seller-card p {
+    color: #bdc3c7;
+    font-size: 1.2rem;
+}
+
+.seller-card button {
+    background-color: #3498db;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+}
+
+.seller-card button:hover {
+    background-color: #2980b9;
+}
+
+/* Стили для корзины */
+.cart-container {
+    background-color: #34495e;
+    border: 1px solid #2c3e50;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    max-width: 50px;
+    border-radius: 5px;
+}
+
+.cart-item h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ecf0f1;
+}
+
+.cart-item p {
+    margin: 0;
+    color: #bdc3c7;
+    font-size: 1.2rem;
+}
+
+.cart-item button {
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+}
+
+.cart-item button:hover {
+    background-color: #c0392b;
+}
+
+/* Стили для сортировки и поиска */
+.sort-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sort-container select,
+.sort-container input {
+    padding: 10px;
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+.sort-container select {
+    margin-right: 10px;
+}
